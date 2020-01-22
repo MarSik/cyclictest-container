@@ -1,0 +1,11 @@
+--- orig/src/lib/rt-utils.c	2020-01-22 08:25:15.732299401 +0100
++++ new/src/lib/rt-utils.c	2020-01-20 08:34:01.512017751 +0100
+@@ -252,6 +252,8 @@
+ 
+ int check_privs(void)
+ {
++	return 0;
++
+ 	int policy = sched_getscheduler(0);
+ 	struct sched_param param, old_param;
+ 
